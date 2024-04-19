@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ann Xu Personal Website</title>
+
+<link rel="stylesheet" href="ANN.css">
+
+<nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+    </nav>
+<body>
+    <main>
+<section id="home" class="content-section">
+
+<div class="content-container">
+  <div class="text-column">
+      <p><span class="font-story1">Welcome to Ann Xu's Personal Webpage!</span></p>
+      <p><span class="font-story1">My legal name is Qian, I go by Ann just because it's easier to pronounce :D</span></p>
+      <p><span class="font-story1">I was born and raised in Shanghai,China. </span></p>
+      <p><span class="font-story1">Fun facts about me:</span></p>
+      <p><span class="font-story1">I went to four continents during the last year.</span></p>
+      <p><span class="font-story1">I played percussions in high school marching band for three years.</span></p>
+      <p><span class="font-story2">Continue to know more about me!</span></p>
+      </div>
+
+<div class="image-column">
+        <img src="ann.jpg" alt="Ann">
+        </div>
+    </div>
+ </section>
+ 
+<section id="profile" class="content-section hidden">
+
+<div class="title">
+    <h2>Academic Background</h2>
+</div>
+
+<div class="profile-container">
+<div class="profileimage-column">
+    <img src="ggt.jpg" alt="Georgetown">
+    <img src="suibe.jpg" alt="SUIBE">
+</div>
+
+<div class="profiletext-column">
+    <p><span class="font-profile1">Georgetown University</span></p>
+    <p><span class="font-profile2">McDonough School of Business</span></p>
+    <p><span class="font-profile2">July 2023 - May 2024 in Washington DC, USA</span></p>
+        <p><span class="font-linebreak">:</span></p>
+    <p><span class="font-profile1">Shanghai University of International Business and Economics</span></p>
+    <p><span class="font-profile2">Major in International Business</span></p>
+    <p><span class="font-profile2">Oct 2019 - June 2023 in Shanghai, China</span></p>
+</div>
+</div>
+
+<div class="title">
+    <h2>Professional Experience</h2>
+</div>
+  
+<div class="profile-container">
+<div class="profileimage-column">
+    <img src="wacho.jpg" alt="WACHO">
+    <img src="HACN.jpg" alt="HACN">
+    <img src="PwC.jpg" alt="PwC">
+    <img src="KPMG.jpg" alt="KPMG"></div>
+
+<div class="profiletext-column">
+  
+    <p><span class="font-profile1">WACHO Inc, USA</span></p>
+    <p><span class="font-profile2">Feb 2024 - May 2024 in Buenos Aires, Argentina and Washington DC, USA</span></p>
+    <p><span class="font-profile2">Graduate Consultant</span></p>
+    <p><span class="font-linebreak">:</span></p>
+
+  
+  
+    <p><span class="font-profile1">Hang Seng Bank (China) Limited</span></p>
+    <p><span class="font-profile2">Aug 2022 - Feb 2023 in Shanghai, China</span></p>
+    <p><span class="font-profile2">Global Banking Intern</span></p>
+    <p><span class="font-linebreak">:</span></p>
+    <p><span class="font-linebreak">:</span></p>
+
+
+    <p><span class="font-profile1">PwC</span></p>
+    <p><span class="font-profile2">Jan 2022 - May 2022 in Shanghai, China</span></p>
+    <p><span class="font-profile2">Audit Intern of Financial Services Department</span></p>
+    <p><span class="font-linebreak">:</span></p>
+    <p><span class="font-linebreak">:</span></p>
+   
+    <p><span class="font-profile1">KPMG</p>
+      <p><span class="font-profile2">Jul 2021 - Aug 2021 in Shanghai, China</span></p>
+      <p><span class="font-profile2">Audit Intern</span></p>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.add('hidden');});
+            document.getElementById(sectionId).classList.remove('hidden');}
+        showSection('home');
+</script>
+
+</html>
